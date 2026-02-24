@@ -6,3 +6,4 @@ First install uv-->pip install uv
 'uv sync', this command is a special command, it will create .venv and sync all dependencies. >>>uv sync 
 Using GitBash>>> $ uv sync Using CPython 3.12.12 Creating virtual environment at: .venv
 3. git branch -m main
+4. 
