@@ -1,7 +1,7 @@
 [project]
 name = "langchain-basic"
 version = "0.1.0"
-description = "Add your description here"
+description = "Veru basic for begginer"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
