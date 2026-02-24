@@ -168,6 +168,48 @@ OPENAI_API_KEY="sk-proj-xxxxxxxxxxxxxxxx"
 
 ---
 
+## ⚠️ Very Important Security Note
+
+**ALWAYS add `.env` to your `.gitignore` file.**
+
+Why?
+
+- `.env` contains secret API keys
+- If committed to GitHub, your key can be stolen
+- Exposed keys can cause billing abuse
+- OpenAI may automatically disable leaked keys
+
+---
+
+### Add This Line to `.gitignore`
+
+Open your `.gitignore` file and add:
+
+```
+.env
+```
+
+If `.gitignore` does not exist, create it in the project root.
+
+---
+
+## 🔒 Best Practice
+
+Never:
+
+- ❌ Hardcode API keys inside Python files
+- ❌ Push `.env` to GitHub
+- ❌ Share API keys publicly
+
+Always:
+
+- ✅ Use environment variables
+- ✅ Use `python-dotenv`
+- ✅ Keep secrets outside source code
+
+Security is not optional — it is mandatory in real-world development.
+---
+
 # 🧠 8. Load Environment Variables in Python
 
 Install dotenv:
