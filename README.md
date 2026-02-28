@@ -321,3 +321,27 @@ Using GitBash>>> $ uv sync Using CPython 3.12.12 Creating virtual environment at
 5. For Git Bash 'source .venv/Scripts/activate' for Powershell '.venv/Scripts/activate'
 6. Create .env file in root folder
 7. Add key and value for OpenAI in .env file like==>OPENAI_API_KEY="sk-proj"
+8. uv add langchain_openai
+9. uv add langchain_core
+10. We have deticated library for prompt
+11. uv add load-dotenv
+
+🧱 Pydantic vs TypedDict — When and Why to Use
+
+In modern AI systems (LLMs, RAG, Agents, APIs), defining and validating structured data is critical.
+
+Python provides two approaches:
+
+- TypedDict — lightweight static typing (no runtime validation)
+- Pydantic — runtime validation and enforcement (recommended for production)
+
+📘 TypedDict (Static Type Hinting)
+
+TypedDict defines the expected structure of a dictionary for static type checking.
+
+```python
+from typing import TypedDict
+
+class CountrySchema(TypedDict):
+    capital: str
+    country: str
